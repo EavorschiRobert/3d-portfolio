@@ -1,4 +1,4 @@
-export const textVariant = (delay) => {
+export const textVariant = (delay?:number) => {
   return {
     hidden: {
       y: -50,
@@ -16,7 +16,7 @@ export const textVariant = (delay) => {
   };
 };
 
-export const fadeIn = (direction, type, delay, duration) => {
+export const fadeIn = (direction: string, type: string, delay: number, duration: number) => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
